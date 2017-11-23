@@ -1,0 +1,2034 @@
+Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 18960794
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960794?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-01T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Save Mart Center
+                    [latitude] => 36.7477778
+                    [longitude] => -119.7713889
+                    [city] => Fresno
+                    [region] => CA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18960794?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 18960781
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960781?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-02T19:30:00
+            [venue] => stdClass Object
+                (
+                    [name] => Golden 1 Center
+                    [latitude] => 38.5800073
+                    [longitude] => -121.5009825
+                    [city] => Sacramento
+                    [region] => CA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/18960781?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [2] => stdClass Object
+        (
+            [id] => 18960770
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960770?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-04T19:30:00
+            [venue] => stdClass Object
+                (
+                    [name] => Spokane Arena
+                    [latitude] => 47.66546
+                    [longitude] => -117.422404
+                    [city] => Spokane
+                    [region] => WA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18960770?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [3] => stdClass Object
+        (
+            [id] => 18960762
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960762?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-05T19:30:00
+            [venue] => stdClass Object
+                (
+                    [name] => Matthew Knight Arena
+                    [latitude] => 44.045394
+                    [longitude] => -123.066904
+                    [city] => Eugene
+                    [region] => OR
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/18960762?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [4] => stdClass Object
+        (
+            [id] => 18960710
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960710?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-07T19:30:00
+            [venue] => stdClass Object
+                (
+                    [name] => Ford Idaho Center
+                    [latitude] => 43.5408333
+                    [longitude] => -116.5625
+                    [city] => Nampa
+                    [region] => ID
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18960710?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [5] => stdClass Object
+        (
+            [id] => 18960699
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960699?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-09T19:30:00
+            [venue] => stdClass Object
+                (
+                    [name] => Rim Rock Auto Arena at Metrapark
+                    [latitude] => 45.800031
+                    [longitude] => -108.477158
+                    [city] => Billings
+                    [region] => MT
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18960699?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [6] => stdClass Object
+        (
+            [id] => 18960684
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960684?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-10T19:30:00
+            [venue] => stdClass Object
+                (
+                    [name] => Casper Events Center
+                    [latitude] => 42.869021
+                    [longitude] => -106.340044
+                    [city] => Casper
+                    [region] => WY
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18960684?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [7] => stdClass Object
+        (
+            [id] => 18960670
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18960670?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2017-12-12T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Vivint Smart Home Arena
+                    [latitude] => 40.768187
+                    [longitude] => -111.901195
+                    [city] => Salt Lake City
+                    [region] => UT
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18960670?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [8] => stdClass Object
+        (
+            [id] => 20280668
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20280668?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2017-12-31T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => The Chelsea at The Cosmopolitan
+                    [latitude] => 36.1099345
+                    [longitude] => -115.1754157
+                    [city] => Las Vegas
+                    [region] => NV
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20280668?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [9] => stdClass Object
+        (
+            [id] => 19936930
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19936930?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-09-22T04:00:00
+            [datetime] => 2018-01-20T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => nib Stadium
+                    [latitude] => -31.950538
+                    [longitude] => 115.865022
+                    [city] => Perth
+                    [region] => WA
+                    [country] => Australia
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/19936930?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [10] => stdClass Object
+        (
+            [id] => 19937064
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19937064?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-09-19T03:30:00
+            [datetime] => 2018-01-23T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Coopers Stadium
+                    [latitude] => -34.908196
+                    [longitude] => 138.567868
+                    [city] => Hindmarsh
+                    [region] => SA
+                    [country] => Australia
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/19937064?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [11] => stdClass Object
+        (
+            [id] => 19937069
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19937069?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-01-25T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Suncorp Stadium
+                    [latitude] => -27.46694
+                    [longitude] => 153.008728
+                    [city] => Milton Qld
+                    [region] => Australia
+                    [country] => Australia
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/19937069?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [12] => stdClass Object
+        (
+            [id] => 19937036
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19937036?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-09-19T03:00:00
+            [datetime] => 2018-01-27T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => ANZ Stadium
+                    [latitude] => -33.8485
+                    [longitude] => 151.0615599
+                    [city] => Sydney Olympic Park
+                    [region] => Nsw
+                    [country] => Australia
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/19937036?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [13] => stdClass Object
+        (
+            [id] => 19937073
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19937073?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-09-22T02:00:00
+            [datetime] => 2018-01-30T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Etihad Stadium
+                    [latitude] => -37.816518
+                    [longitude] => 144.94554
+                    [city] => Docklands
+                    [region] => Vic
+                    [country] => Australia
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/19937073?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [14] => stdClass Object
+        (
+            [id] => 19936939
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19936939?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-02-03T17:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Mount Smart Stadium
+                    [latitude] => -36.91927
+                    [longitude] => 174.81352
+                    [city] => Auckland
+                    [region] => Auckland
+                    [country] => New Zealand
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/19936939?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [15] => stdClass Object
+        (
+            [id] => 19847922
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19847922?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-02-25T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Maracana
+                    [latitude] => -22.9
+                    [longitude] => -43.2333333
+                    [city] => Rio De Janeiro
+                    [region] => 21
+                    [country] => Brazil
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Presale
+                            [url] => https://www.bandsintown.com/t/19847922?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => Queens of the Stone Age
+                )
+
+        )
+
+    [16] => stdClass Object
+        (
+            [id] => 19847926
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19847926?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-10-17T12:00:00
+            [datetime] => 2018-02-27T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Allianz Parque
+                    [latitude] => -23.5285091
+                    [longitude] => -46.6791306
+                    [city] => Sao Paulo
+                    [region] => SP
+                    [country] => Brazil
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Presale
+                            [url] => https://www.bandsintown.com/t/19847926?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => Queens of the Stone Age
+                )
+
+        )
+
+    [17] => stdClass Object
+        (
+            [id] => 19847932
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19847932?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-03-02T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Pedreira Paulo Leminsky
+                    [latitude] => -25.4166667
+                    [longitude] => -49.25
+                    [city] => Curitiba
+                    [region] => 18
+                    [country] => Brazil
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Presale
+                            [url] => https://www.bandsintown.com/t/19847932?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => Queens of the Stone Age
+                )
+
+        )
+
+    [18] => stdClass Object
+        (
+            [id] => 19847937
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19847937?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-03-04T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Estadio Beira Rio
+                    [latitude] => -30.0333333
+                    [longitude] => -51.2
+                    [city] => Porto Alegre
+                    [region] => 23
+                    [country] => Brazil
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Presale
+                            [url] => https://www.bandsintown.com/t/19847937?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => Queens of the Stone Age
+                )
+
+        )
+
+    [19] => stdClass Object
+        (
+            [id] => 19847942
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/19847942?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-03-07T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Velez
+                    [latitude] => -34.5875
+                    [longitude] => -58.6725
+                    [city] => Buenos Aires
+                    [region] => 07
+                    [country] => Argentina
+                )
+
+            [offers] => Array
+                (
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => Queens of the Stone Age
+                )
+
+        )
+
+    [20] => stdClass Object
+        (
+            [id] => 20210599
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210599?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-18T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Austin 360
+                    [latitude] => 30.2669444
+                    [longitude] => -97.7427778
+                    [city] => Austin
+                    [region] => TX
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20210599?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [21] => stdClass Object
+        (
+            [id] => 20210600
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210600?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-19T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Cynthia Woods Amphitheater
+                    [latitude] => 29.7630556
+                    [longitude] => -95.3630556
+                    [city] => Houston
+                    [region] => TX
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210600?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [22] => stdClass Object
+        (
+            [id] => 20210602
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210602?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-21T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Starplex
+                    [latitude] => 32.7833333
+                    [longitude] => -96.8
+                    [city] => Dallas
+                    [region] => TX
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210602?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [23] => stdClass Object
+        (
+            [id] => 20210603
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210603?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-22T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Century Link Center
+                    [latitude] => 32.5158333
+                    [longitude] => -93.7319444
+                    [city] => Bossier City
+                    [region] => LA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210603?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [24] => stdClass Object
+        (
+            [id] => 20210604
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210604?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-25T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Mid-Florida Amphitheatre
+                    [latitude] => 27.9472222
+                    [longitude] => -82.4586111
+                    [city] => Tampa
+                    [region] => FL
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210604?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [25] => stdClass Object
+        (
+            [id] => 20210605
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210605?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-26T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Perfect Vodka Amphitheater
+                    [latitude] => 26.701632
+                    [longitude] => -80.056922
+                    [city] => West Palm Beach
+                    [region] => FL
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210605?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [26] => stdClass Object
+        (
+            [id] => 20210606
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210606?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-03T14:00:00
+            [datetime] => 2018-04-28T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Georgia State Stadium
+                    [latitude] => 33.736125
+                    [longitude] => -84.389355
+                    [city] => Atlanta
+                    [region] => GA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210606?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [27] => stdClass Object
+        (
+            [id] => 20210608
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210608?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-04-29T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Welcome To Rockville
+                    [latitude] => 30.3229904
+                    [longitude] => -81.643959
+                    [city] => Jacksonville
+                    [region] => FL
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210608?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [28] => stdClass Object
+        (
+            [id] => 18961489
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18961489?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2018-05-01T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Rupp Arena
+                    [latitude] => 38.049148
+                    [longitude] => -84.5010377
+                    [city] => Lexington
+                    [region] => KY
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18961489?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => The Struts
+                )
+
+        )
+
+    [29] => stdClass Object
+        (
+            [id] => 18961482
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18961482?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2018-05-03T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Fedex Forum
+                    [latitude] => 35.139517
+                    [longitude] => -90.05167
+                    [city] => Memphis
+                    [region] => TN
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18961482?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => The Struts
+                )
+
+        )
+
+    [30] => stdClass Object
+        (
+            [id] => 18961487
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/18961487?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-06-29T10:00:00
+            [datetime] => 2018-05-04T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Bridgestone Arena
+                    [latitude] => 36.159949
+                    [longitude] => -86.77857
+                    [city] => Nashville
+                    [region] => TN
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/18961487?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                    [1] => The Struts
+                )
+
+        )
+
+    [31] => stdClass Object
+        (
+            [id] => 20285923
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20285923?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-06-01T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Rock am Ring (1-3 June)
+                    [latitude] => 49.4477778
+                    [longitude] => 11.0683333
+                    [city] => Nuremberg
+                    [region] => 02
+                    [country] => Germany
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20285923?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [32] => stdClass Object
+        (
+            [id] => 20285975
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20285975?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-06-01T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Rock im Park (1-3 June)
+                    [latitude] => 49.429037
+                    [longitude] => 11.122492
+                    [city] => Nuremberg
+                    [region] => BY
+                    [country] => Germany
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20285975?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [33] => stdClass Object
+        (
+            [id] => 20210610
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210610?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-10-27T06:55:00
+            [datetime] => 2018-06-05T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Ullevi
+                    [latitude] => 57.70313
+                    [longitude] => 11.98394
+                    [city] => Goteborg
+                    [region] => Vgi
+                    [country] => Sweden
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210610?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [34] => stdClass Object
+        (
+            [id] => 20210611
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210611?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-06-11T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Sportspaleis Antwerp
+                    [latitude] => 51.2166667
+                    [longitude] => 4.4166667
+                    [city] => Antwerp
+                    [region] => 01
+                    [country] => Belgium
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20210611?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [35] => stdClass Object
+        (
+            [id] => 20210612
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210612?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-10-26T06:00:00
+            [datetime] => 2018-06-13T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => STADE DE SUISSE
+                    [latitude] => 46.962251
+                    [longitude] => 7.464985
+                    [city] => Berne
+                    [region] => Switzerland
+                    [country] => Switzerland
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210612?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [36] => stdClass Object
+        (
+            [id] => 20210613
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210613?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-06-15T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Pinkpop Festival
+                    [latitude] => 50.882215
+                    [longitude] => 6.020001
+                    [city] => Landgraaf
+                    [region] => The Netherlands
+                    [country] => Netherlands
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210613?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [37] => stdClass Object
+        (
+            [id] => 20102605
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20102605?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-10-18T07:55:00
+            [datetime] => 2018-06-19T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Etihad Stadium
+                    [latitude] => 53.484601
+                    [longitude] => -2.202709
+                    [city] => Manchester
+                    [region] =>
+                    [country] => United Kingdom
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20102605?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [38] => stdClass Object
+        (
+            [id] => 20102577
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20102577?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-10-18T07:55:00
+            [datetime] => 2018-06-22T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => London Stadium
+                    [latitude] => 51.5386545
+                    [longitude] => -0.0165093
+                    [city] => London
+                    [region] =>
+                    [country] => England
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20102577?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [39] => stdClass Object
+        (
+            [id] => 20102583
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20102583?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-10-18T07:55:00
+            [datetime] => 2018-06-23T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => London Stadium
+                    [latitude] => 51.5386545
+                    [longitude] => -0.0165093
+                    [city] => London
+                    [region] =>
+                    [country] => England
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20102583?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [40] => stdClass Object
+        (
+            [id] => 20210614
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210614?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-07T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Bb&T Pavilion
+                    [latitude] => 39.9403915
+                    [longitude] => -75.1299133
+                    [city] => Camden
+                    [region] => NJ
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210614?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [41] => stdClass Object
+        (
+            [id] => 20210615
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210615?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-12T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Rogers Center
+                    [latitude] => 43.6420288
+                    [longitude] => -79.3906021
+                    [city] => Toronto
+                    [region] => ON
+                    [country] => Canada
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210615?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [42] => stdClass Object
+        (
+            [id] => 20210617
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210617?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-14T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Northwell Health @ Jones Beach Theater
+                    [latitude] => 40.6014755
+                    [longitude] => -73.5023618
+                    [city] => Wantagh
+                    [region] => NY
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210617?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [43] => stdClass Object
+        (
+            [id] => 20210619
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210619?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-16T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Madison Square Garden
+                    [latitude] => 40.7141667
+                    [longitude] => -74.0063889
+                    [city] => New York
+                    [region] => NY
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210619?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [44] => stdClass Object
+        (
+            [id] => 20210620
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210620?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-17T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Madison Square Garden
+                    [latitude] => 40.7141667
+                    [longitude] => -74.0063889
+                    [city] => New York
+                    [region] => NY
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210620?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [45] => stdClass Object
+        (
+            [id] => 20210621
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210621?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-03T14:00:00
+            [datetime] => 2018-07-19T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => PPG Paints Arena
+                    [latitude] => 40.4388401
+                    [longitude] => -79.9908551
+                    [city] => Pittsburgh
+                    [region] => PA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210621?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [46] => stdClass Object
+        (
+            [id] => 20210622
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210622?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-03T14:00:00
+            [datetime] => 2018-07-21T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Fenway Park
+                    [latitude] => 42.346522
+                    [longitude] => -71.09878
+                    [city] => Boston
+                    [region] => MA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210622?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [47] => stdClass Object
+        (
+            [id] => 20210623
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210623?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-22T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Fenway Park
+                    [latitude] => 42.346522
+                    [longitude] => -71.09878
+                    [city] => Boston
+                    [region] => MA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210623?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [48] => stdClass Object
+        (
+            [id] => 20210625
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210625?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-03T14:00:00
+            [datetime] => 2018-07-25T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Blossom Music Center
+                    [latitude] => 41.1084785
+                    [longitude] => -81.5087128
+                    [city] => Cuyahoga Falls
+                    [region] => OH
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210625?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [49] => stdClass Object
+        (
+            [id] => 20210626
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210626?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-26T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Ruoff Home Mortgage Music Center
+                    [latitude] => 39.7683333
+                    [longitude] => -86.1580556
+                    [city] => Indianapolis
+                    [region] => IN
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210626?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [50] => stdClass Object
+        (
+            [id] => 20210627
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20210627?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-29T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Wrigley Field
+                    [latitude] => 41.85
+                    [longitude] => -87.65
+                    [city] => Chicago
+                    [region] => IL
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20210627?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [51] => stdClass Object
+        (
+            [id] => 20412679
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20412679?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-07-30T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Wrigley Field
+                    [latitude] => 41.9474536
+                    [longitude] => -87.6561341
+                    [city] => Chicago
+                    [region] => IL
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Sold Out
+                            [url] => https://www.bandsintown.com/t/20412679?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [52] => stdClass Object
+        (
+            [id] => 20449483
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20449483?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-20T18:00:00
+            [datetime] => 2018-09-01T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Safeco Field
+                    [latitude] => 47.5909875
+                    [longitude] => -122.3332268
+                    [city] => Seattle
+                    [region] => WA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20449483?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [53] => stdClass Object
+        (
+            [id] => 20449484
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20449484?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-18T17:00:00
+            [datetime] => 2018-09-04T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Rogers Place
+                    [latitude] => 53.546911
+                    [longitude] => -113.497237
+                    [city] => Edmonton
+                    [region] => AB
+                    [country] => Canada
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20449484?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [54] => stdClass Object
+        (
+            [id] => 20449482
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20449482?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] => 2017-11-18T17:00:00
+            [datetime] => 2018-09-06T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Scotiabank Saddledome
+                    [latitude] => 51.038075
+                    [longitude] => -114.051461
+                    [city] => Calgary
+                    [region] => AB
+                    [country] => Canada
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20449482?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [55] => stdClass Object
+        (
+            [id] => 20449508
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20449508?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-09-08T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Pepsi Live at Rogers Arena
+                    [latitude] => 49.277818
+                    [longitude] => -123.108828
+                    [city] => Vancouver
+                    [region] => BC
+                    [country] => Canada
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20449508?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [56] => stdClass Object
+        (
+            [id] => 20449525
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20449525?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-09-10T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => Moda Center
+                    [latitude] => 45.531189
+                    [longitude] => -122.6664581
+                    [city] => Portland
+                    [region] => OR
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20449525?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+    [57] => stdClass Object
+        (
+            [id] => 20449547
+            [artist_id] => 250
+            [url] => https://www.bandsintown.com/e/20449547?app_id=vanhackaton&came_from=267
+            [on_sale_datetime] =>
+            [datetime] => 2018-09-12T19:00:00
+            [venue] => stdClass Object
+                (
+                    [name] => SAP Center
+                    [latitude] => 37.3394444
+                    [longitude] => -121.8938889
+                    [city] => San Jose
+                    [region] => CA
+                    [country] => United States
+                )
+
+            [offers] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [type] => Tickets
+                            [url] => https://www.bandsintown.com/t/20449547?app_id=vanhackaton&came_from=267
+                            [status] => available
+                        )
+
+                )
+
+            [lineup] => Array
+                (
+                    [0] => Foo Fighters
+                )
+
+        )
+
+)

@@ -1,0 +1,12 @@
+stdClass Object
+(
+    [id] => 205
+    [name] => Madonna
+    [url] => https://www.bandsintown.com/a/205?came_from=267&app_id=vanhackaton
+    [image_url] => https://s3.amazonaws.com/bit-photos/large/5263362.jpeg
+    [thumb_url] => https://s3.amazonaws.com/bit-photos/thumb/5263362.jpeg
+    [facebook_page_url] =>
+    [mbid] => 79239441-bfd5-4981-a70c-55c3f15c1287
+    [tracker_count] => 1276782
+    [upcoming_event_count] => 0
+)
