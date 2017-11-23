@@ -65,6 +65,11 @@ if (empty($artist)) {
                             <img src="<?php echo($artist->thumb_url); ?>">
                             <h2 class="title-slider large uppercased mb40 word-wrap"><?php echo($artist->name); ?></h2>
 <?php
+    if (!empty($artist->facebook_page_url)) {
+?>
+                            <h3><a href="<?php echo($artist->facebook_page_url); ?>" target="_blank"><span class="fa fa-facebook-square"></span></a></h3>
+<?php
+    }
 }
 ?>
                         </div>
