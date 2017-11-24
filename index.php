@@ -116,7 +116,7 @@ if (!empty($artist)) {
         }
 ?>
                                     </h3>
-                                    <p><?php echo(strtoupper($event->venue->name)); ?></p>
+                                    <a data-toggle="modal" data-target=".bd-example-modal-lg" OnClick="initMap(<?php echo($event->venue->latitude)  ?>,<?php echo($event->venue->longitude)  ?>)" ><p><?php echo(strtoupper($event->venue->name)); ?> Latitude <?php echo($event->venue->latitude)  ?>  Longitude <?php echo($event->venue->longitude)  ?> </p></a>
                                     <p><?php echo($event->venue->city . ', ' . (!ctype_digit($event->venue->region) ? $event->venue->region . ', ' : '') . $event->venue->country); ?></p>
                                 </div>
                             </div>
@@ -143,6 +143,14 @@ if (!empty($artist)) {
                 </div>
             </footer>
         </div>
+        <!-- Modal Maps -->
+       <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.min.js"></script>
@@ -150,5 +158,15 @@ if (!empty($artist)) {
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/scripts.js"></script>
+        <script>
+            function initMap(latitude,longitude) {
+                var map;
+                map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: latitude, lng: longitude},
+                zoom: 8
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm3KarFLFFjlDCuVDIcixLRhQ-ANyGwAc" async defer></script>
     </body>
 </html>
