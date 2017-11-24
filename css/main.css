@@ -1089,24 +1089,23 @@ iframe {
 }
 .megamenu [class*="col-"] {
     display: block;
-    width: 100%;
     min-height: 1px;
     float: left;
     padding: 0 10px;
     margin-bottom: 20px;
 }
-.megamenu .col-1 { width: 8.33333333%; }
-.megamenu .col-2 { width: 16.66666667%; }
-.megamenu .col-3 { width: 25%; }
-.megamenu .col-4 { width: 33.33333333%; }
-.megamenu .col-5 {  width: 41.66666667%; }
-.megamenu .col-6 { width: 50%; }
-.megamenu .col-7 { width: 58.33333333%; }
-.megamenu .col-8 { width: 66.66666667%; }
-.megamenu .col-9 { width: 75%; }
-.megamenu .col-10 { width: 83.33333333%; }
-.megamenu .col-11 { width: 91.66666667%; }
-.megamenu .col-12 {  width: 100%; }
+.col-1 { width: 8.33333333%; }
+.col-2 { width: 16.66666667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33333333%; }
+.col-5 {  width: 41.66666667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33333333%; }
+.col-8 { width: 66.66666667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33333333%; }
+.col-11 { width: 91.66666667%; }
+.col-12 {  width: 100%; }
 
 
 /* Menu Icons */
@@ -1236,18 +1235,11 @@ iframe {
         width: 100% !important;
         position: static;
         padding: 15px 0 0 30px;
-        background: transparent;
         color: inherit;
         font-size: 10px;
     }
     .megamenu-list > .title, .vertical-menu-list > .title {
     	color: inherit;
-    }
-    .megamenu [class*="col-"] {
-        float: none;
-        display: block;
-        width: 100% !important;
-        margin-bottom: 30px;
     }
     .megamenu .row,
     .megamenu .row:first-child [class*="col-"]:first-child {
@@ -1422,6 +1414,11 @@ iframe {
 	.xs-menu-wrapper-dark .menu-wrapper {
 		background-color: rgb(41,44,49) !important;
 	}
+
+    .megamenu [class*="col-"] {
+        display: block;
+        margin-bottom: 30px;
+    }
 }
 
 /* *********************  Headers   ********************* */
