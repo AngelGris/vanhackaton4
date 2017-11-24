@@ -1,0 +1,53 @@
+.header-wrapper {
+    position: fixed;
+    width: 100%;
+}
+
+.history {
+    float: right !important;
+    margin-left: 10px;
+}
+
+.history img {
+    max-height: 45px;
+}
+
+.event {
+    float: left;
+}
+
+#map {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width:767px) {
+    .megamenu {
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .header-wrapper {
+        position: relative;
+    }
+
+    .history img {
+        width: auto;
+    }
+}
+
+@media (max-width:642px) {
+    .megamenu {
+        height: auto;
+    }
+
+    .megamenu .col-4,
+    .megamenu .col-8 {
+        float: none;
+        width: 100% !important;
+    }
+
+    .megamenu .col-4 {
+        text-align: center;
+    }
+}

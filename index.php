@@ -111,7 +111,7 @@ if (empty($artist)) {
 <?php
 } else {
 ?>
-                            <img src="<?php echo($artist->thumb_url); ?>">
+                            <img class="imgBand" src="<?php echo($artist->thumb_url); ?>">
                             <h2 class="title-slider large uppercased mb40 word-wrap"><?php echo($artist->name); ?></h2>
 <?php
     if (!empty($artist->facebook_page_url)) {
