@@ -220,7 +220,7 @@ if (!empty($artist)) {
 
                 map = new google.maps.Map(document.getElementById('map'), {
                     enter: latlng,
-                    zoom: 5
+                    zoom: 14
                 });
 
                 marker = new google.maps.Marker({
