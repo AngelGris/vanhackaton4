@@ -13,6 +13,10 @@
     max-height: 45px;
 }
 
+.social-network {
+    margin: 0 10px;
+}
+
 .event {
     float: left;
 }
