@@ -8,5 +8,5 @@ define('APP_ID', 'vanhackaton');
 /**
  * Format to present date and time for events
  */
-define('TIME_FORMAT', 'd-m-Y h:ia');
+define('TIME_FORMAT', 'd-m-Y @ h:ia');
 ?>
