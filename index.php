@@ -160,7 +160,7 @@ if (!empty($artist)) {
                                     <h3 class="title-small">
 <?php
         $date = date(TIME_FORMAT, strtotime($event->datetime));
-        $location = $event->venue->city . ', ' . (!ctype_digit($event->venue->region) ? $event->venue->region . ', ' : '') . $event->venue->country;
+        $location = $event->venue->city . ', ' . (!empty($event->venue->region) && !ctype_digit($event->venue->region) ? $event->venue->region . ', ' : '') . $event->venue->country;
 
         echo($date);
         if ($tickets) {
@@ -168,7 +168,7 @@ if (!empty($artist)) {
         }
 ?>
                                     </h3>
-                                    <a href="#" class="show-event" data-date="<?php echo($date); ?>" data-venue="<?php echo(strtoupper($event->venue->name)); ?>" data-location="<?php echo($location); ?>" data-latitude="<?php echo($event->venue->latitude); ?>" data-longitude="<?php echo($event->venue->longitude); ?>" data-tickets="<?php echo($tickets); ?>" ><p><?php echo(strtoupper($event->venue->name)); ?></p></a>
+                                    <a href="#" class="show-event" data-date="<?php echo($date); ?>" data-venue="<?php echo(strtoupper($event->venue->name)); ?>" data-location="<?php echo($location); ?>" data-latitude="<?php echo($event->venue->latitude); ?>" data-longitude="<?php echo($event->venue->longitude); ?>" data-lineup="<?php echo('<li>' . implode('</li><li>', $event->lineup) . '</li>'); ?>" data-tickets="<?php echo($tickets); ?>" ><p><?php echo(strtoupper($event->venue->name)); ?></p></a>
                                     <p><?php echo($location); ?></p>
                                 </div>
                             </div>
@@ -199,20 +199,37 @@ if (!empty($artist)) {
        <div id="modal-event" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <h1 id="modal-event-title">VENUE NAME</h1>
-                    <p id="modal-event-location">City, State, Country</p>
-                    <div id="map"></div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-sm-6">
+                            <h2 id="modal-event-date">01/01/1900 00:00am</h2>
+                            <h3 id="modal-event-title">VENUE NAME</h3>
+                            <p id="modal-event-location">City, State, Country</p>
+                            <ul id="modal-event-lineup"></ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" id="modal-buy" class="btn btn-primary" target="_blank">Buy tickets</a>
+                    </div>
                 </div>
             </div>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm3KarFLFFjlDCuVDIcixLRhQ-ANyGwAc"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm3KarFLFFjlDCuVDIcixLRhQ-ANyGwAc" async defer></script>
         <script src="js/scripts.js"></script>
         <script>
             var map;
             var marker;
+            var infowindow;
             var latlng;
 
             function initMap(lat = 0, lng = 0, venue = '') {
@@ -228,6 +245,14 @@ if (!empty($artist)) {
                     map: map,
                     title: venue
                 });
+
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
+
+                infowindow = new google.maps.InfoWindow({
+                    content: ''
+                });
             }
 
             $(function() {
@@ -236,10 +261,27 @@ if (!empty($artist)) {
 
                     latlng = new google.maps.LatLng($(this).data('latitude'), $(this).data('longitude'));
 
+                    $('#modal-event-date').text($(this).data('date'));
                     $('#modal-event-title').text($(this).data('venue'));
                     $('#modal-event-location').text($(this).data('location'));
+                    $('#modal-event-lineup').html($(this).data('lineup'));
                     map.setCenter(latlng);
                     marker.setPosition(latlng);
+
+                    infowindow.setContent('<div>' +
+                                 '<h5>' + $(this).data('venue') + '</h5>' +
+                                 '<p>' + $(this).data('date') + '</p>' +
+                                 '<ul>' +
+                                 $(this).data('lineup') +
+                                 '</ul>' +
+                                 '</div>');
+
+                    if ($(this).data('tickets') == '') {
+                        $('#modal-buy').hide();
+                    } else {
+                        $('#modal-buy').attr('href', $(this).data('tickets'));
+                        $('#modal-buy').show();
+                    }
 
                     $('#modal-event').modal('show');
                 });
