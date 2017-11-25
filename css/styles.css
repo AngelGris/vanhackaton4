@@ -9,6 +9,7 @@
 }
 
 .history img {
+    border-radius: 50%;
     max-height: 45px;
 }
 
