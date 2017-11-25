@@ -230,72 +230,8 @@ if (!empty($artist)) {
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm3KarFLFFjlDCuVDIcixLRhQ-ANyGwAc" async defer></script>
         <script src="js/scripts.js"></script>
         <script>
-            var map;
-            var marker;
-            var infowindow;
-            var latlng;
-
-            function initMap(lat = 0, lng = 0, venue = '') {
-                latlng = new google.maps.LatLng(lat, lng);
-
-                map = new google.maps.Map(document.getElementById('map'), {
-                    enter: latlng,
-                    zoom: 14
-                });
-
-                marker = new google.maps.Marker({
-                    position: latlng,
-                    map: map,
-                    title: venue
-                });
-
-                marker.addListener('click', function() {
-                    infowindow.open(map, marker);
-                });
-
-                infowindow = new google.maps.InfoWindow({
-                    content: ''
-                });
-            }
-
             $(function() {
-                $('[data-toggle="tooltip"]').tooltip();
 
-                $('.show-event').click(function(e) {
-                    e.preventDefault();
-
-                    latlng = new google.maps.LatLng($(this).data('latitude'), $(this).data('longitude'));
-
-                    $('#modal-event-date').text($(this).data('date'));
-                    $('#modal-event-title').text($(this).data('venue'));
-                    $('#modal-event-location').text($(this).data('location'));
-                    $('#modal-event-lineup').html($(this).data('lineup'));
-                    map.setCenter(latlng);
-                    marker.setPosition(latlng);
-
-                    infowindow.setContent('<div>' +
-                                 '<h5>' + $(this).data('venue') + '</h5>' +
-                                 '<p>' + $(this).data('date') + '</p>' +
-                                 '<ul>' +
-                                 $(this).data('lineup') +
-                                 '</ul>' +
-                                 '</div>');
-
-                    if ($(this).data('tickets') == '') {
-                        $('#modal-buy').hide();
-                    } else {
-                        $('#modal-buy').attr('href', $(this).data('tickets'));
-                        $('#modal-buy').show();
-                    }
-
-                    $('#modal-event').modal('show');
-                });
-
-                /** Fix for Google Maps in dynamic elements **/
-                $('#modal-event').on('shown.bs.modal', function() {
-                    google.maps.event.trigger(map, "resize");
-                    map.setCenter(latlng);
-                })
             });
         </script>
     </body>
