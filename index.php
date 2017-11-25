@@ -38,6 +38,13 @@ if (!empty($artist)) {
      */
     $_SESSION['history'][] = $artist;
 }
+
+/**
+ * Get artist's videos
+ */
+if (!empty($artist)) {
+    $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=id&type=video&maxResults=20&q=' . urlencode($artist->name) . '+vevo&key=' . YOUTUBE_API_KEY));
+}
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -120,8 +127,13 @@ if (empty($artist)) {
                                 <a href="<?php echo($artist->facebook_page_url); ?>" target="_blank"><span class="fa fa-facebook-square social-network"></span></a>
 <?php
     }
+
+    if (!empty($videos->items)) {
 ?>
-                                <a href="#"><span class="fa fa-youtube social-network"></span></a>
+                                <a href="#" data-toggle="modal" data-target="#modal-videos"><span class="fa fa-youtube social-network"></span></a>
+<?php
+    }
+?>
                             </h3>
 <?php
 }
@@ -203,8 +215,42 @@ if (!empty($artist)) {
                 </div>
             </footer>
         </div>
-        <!-- Modal Maps -->
-       <div id="modal-event" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<?php
+if (!empty($videos->items)) {
+?>
+        <!-- Videos Modal -->
+        <div id="modal-videos" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="videos-player" src="https://www.youtube.com/embed/<?php echo($videos->items[0]->id->videoId); ?>" frameborder="0" allowfullscreen></iframe>
+                        <div id="videos-wrapper">
+                            <div id="videos-left"><span class="fa fa-angle-left"></span></div>
+                            <div id="videos-listing" style="width:<?php echo(count($videos->items) * 130); ?>px">
+<?php
+    foreach($videos->items as $video) {
+?>
+                                <div><a href="<?php echo($video->id->videoId); ?>" class="videos-play"><img src="https://img.youtube.com/vi/<?php echo($video->id->videoId); ?>/sddefault.jpg" style="width:120px;"></a></div>
+<?php
+    }
+?>
+                            </div>
+                            <div id="videos-right"><span class="fa fa-angle-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<?php
+}
+?>
+        <!-- Events Modal -->
+        <div id="modal-event" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">

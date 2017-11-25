@@ -1,0 +1,257 @@
+stdClass Object
+(
+    [kind] => youtube#searchListResponse
+    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/tIhfQgfMK2Grzm7LoMAlVsW6QG4"
+    [nextPageToken] => CBQQAA
+    [regionCode] => BR
+    [pageInfo] => stdClass Object
+        (
+            [totalResults] => 1000000
+            [resultsPerPage] => 20
+        )
+
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/opIPJTILbSQBuGvHFUH4CfImCuk"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => TRqiFPpw2fY
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/-0wRmUSH87IktT1ZDeG8mxQC4xo"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => ifwc5xgI3QM
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/sjTj0ifDppsABrLWfYE4KPiJE3g"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => XTeDhSypRgY
+                        )
+
+                )
+
+            [3] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/AP7kwXu5uW7XtCZU51eNcL8o2EU"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => 8TsNkgW2ox0
+                        )
+
+                )
+
+            [4] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/ATq5MSUu-Iy67aq8EyluELYK2vM"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => eBG7P-K-r1Y
+                        )
+
+                )
+
+            [5] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/NkaS6u7x4RNPBi9RRDesj9W3_GM"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => 1VQ_3sBZEm0
+                        )
+
+                )
+
+            [6] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/qQvnd4JPP1MymbwxOvTb-AYpIJI"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => SBjQ9tuuTJQ
+                        )
+
+                )
+
+            [7] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/N5d1q8QkvM4yeFcavCWErTu5Q-A"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => IQXyPg15KV8
+                        )
+
+                )
+
+            [8] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/EIbplOh34LobqsD6ipG3z9uQLh8"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => 4PkcfQtibmU
+                        )
+
+                )
+
+            [9] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/ZeDQ6ihbvnTr1wBdbLpjJHpMRl4"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => o9zlmGfnso0
+                        )
+
+                )
+
+            [10] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/E24S4hKKMKcaPamKBsbMBzzFXSI"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => h_L4Rixya64
+                        )
+
+                )
+
+            [11] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/C7aT_xHubzRxQUJ7Wg_SmHWNYjc"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => ru2UzCldhhw
+                        )
+
+                )
+
+            [12] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/ajKvS5iywI1nZaeuZ-ICn7KK9S8"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => QUM958KnMxU
+                        )
+
+                )
+
+            [13] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/Na4VcmSs4qKaic7XfQvmB5F7Fd8"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => YDVAQI-4lto
+                        )
+
+                )
+
+            [14] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/3XrDfUAJesZu3_GL1_zunAsamHo"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => fTaOlBWcl48
+                        )
+
+                )
+
+            [15] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/GPc9GHh-X-E8WFvT5sPfjmNu-0M"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => EqWRaAF6_WY
+                        )
+
+                )
+
+            [16] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/6WFxs2INMRVdLzcyr4-geZyLI-U"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => I7rCNiiNPxA
+                        )
+
+                )
+
+            [17] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/WmwcIkbddNuhLj9hEBy-YorYtzw"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => j1qQuSuQaHY
+                        )
+
+                )
+
+            [18] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/SDF_4dR9Tja0rvUiY1QnnI1rsNY"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => QRrJ6iMDCvk
+                        )
+
+                )
+
+            [19] => stdClass Object
+                (
+                    [kind] => youtube#searchResult
+                    [etag] => "ld9biNPKjAjgjV7EZ4EKeEGrhao/deIeAPybdpC4CjsKkusR4Ub1Qek"
+                    [id] => stdClass Object
+                        (
+                            [kind] => youtube#video
+                            [videoId] => Eyv2NzbqKnw
+                        )
+
+                )
+
+        )
+
+)

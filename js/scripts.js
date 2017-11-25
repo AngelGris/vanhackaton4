@@ -87,4 +87,38 @@ $(function() {
         google.maps.event.trigger(map, "resize");
         map.setCenter(latlng);
     });
+
+    /**
+     * Video gallery scrollers
+     */
+    $('#modal-videos').on('shown.bs.modal', function() {
+        if ($('#videos-listing').width() <= $('#videos-wrapper').width()) {
+            $('#videos-left').hide();
+            $('#videos-right').hide();
+        }
+    });
+
+    $('#videos-left').click(function(e) {
+        e.preventDefault();
+
+        var pos = $('#videos-listing').position();
+        $('#videos-listing').animate({
+            left : Math.min(0, pos.left + $('#videos-wrapper').width()),
+        });
+    });
+
+    $('#videos-right').click(function(e) {
+        e.preventDefault();
+
+        var pos = $('#videos-listing').position();
+        $('#videos-listing').animate({
+            left : Math.max($('#videos-wrapper').width() - $('#videos-listing').width(), pos.left - $('#videos-wrapper').width()),
+        });
+    });
+
+    $('.videos-play').click(function(e) {
+        e.preventDefault();
+
+        $('#videos-player').attr('src', 'https://www.youtube.com/embed/' + $(this).attr('href') + '?autoplay=true');
+    });
 });

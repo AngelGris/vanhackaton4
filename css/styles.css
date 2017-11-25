@@ -44,6 +44,11 @@
     margin: 0;
 }
 
+.modal-body iframe {
+    height: 250px;
+    width: 100%;
+}
+
 .modal-body ul {
     font-size: 18px;
     list-style: none;
@@ -52,6 +57,49 @@
 
 .modal-body div {
     float:left;
+}
+
+.modal-body #videos-wrapper {
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.modal-body #videos-left,
+.modal-body #videos-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    height: 90px;
+    line-height: 80px;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.modal-body #videos-left {
+    left: 0;
+}
+
+.modal-body #videos-right {
+    right: 0;
+}
+
+.modal-body #videos-listing {
+    position: absolute;
+    height: 90px;
+    left: 0;
+    top: 0;
+    width: auto;
+}
+
+.modal-body #videos-listing div {
+    float: left;
+    margin: 0px 5px;
 }
 
 #map {
