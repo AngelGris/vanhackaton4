@@ -156,13 +156,14 @@ if (!empty($artist)) {
 ?>
                             <div class="col-md-4 event" style="height:170px;">
                                 <div class="br-bottom mt40 mb0"></div>
+<?php
+        $date = date(TIME_FORMAT, strtotime($event->datetime));
+        $location = $event->venue->city . ', ' . (!empty($event->venue->region) && !ctype_digit($event->venue->region) ? $event->venue->region . ', ' : '') . $event->venue->country;
+?>
                                 <a href="#" class="show-event" data-date="<?php echo($date); ?>" data-venue="<?php echo(strtoupper($event->venue->name)); ?>" data-location="<?php echo($location); ?>" data-latitude="<?php echo($event->venue->latitude); ?>" data-longitude="<?php echo($event->venue->longitude); ?>" data-lineup="<?php echo('<li>' . implode('</li><li>', $event->lineup) . '</li>'); ?>" data-tickets="<?php echo($tickets); ?>" >
                                     <div style="position:relative;">
                                         <h3 class="title-small">
 <?php
-        $date = date(TIME_FORMAT, strtotime($event->datetime));
-        $location = $event->venue->city . ', ' . (!empty($event->venue->region) && !ctype_digit($event->venue->region) ? $event->venue->region . ', ' : '') . $event->venue->country;
-
         echo($date);
         if ($tickets) {
             echo(' <span class="fa fa-ticket" style="color:#f00;font-size:12px;"></span>');
