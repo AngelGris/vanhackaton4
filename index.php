@@ -74,7 +74,7 @@ if (!empty($artist)) {
  * If have previous searches, show history
  */
 if (!empty($_SESSION['history'])) {
-    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), 3) as $history) {
+    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 3 : count($_SESSION['history']) - 1)) as $history) {
 ?>
                                 <div class="history">
                                     <a href="./?q=<?php echo($history->term); ?>"><img src="<?php echo($history->thumb_url); ?>" data-toggle="tooltip" title="<?php echo($history->name); ?>"></a>
@@ -156,8 +156,9 @@ if (!empty($artist)) {
 ?>
                             <div class="col-md-4 event" style="height:170px;">
                                 <div class="br-bottom mt40 mb0"></div>
-                                <div style="position:relative;">
-                                    <h3 class="title-small">
+                                <a href="#" class="show-event" data-date="<?php echo($date); ?>" data-venue="<?php echo(strtoupper($event->venue->name)); ?>" data-location="<?php echo($location); ?>" data-latitude="<?php echo($event->venue->latitude); ?>" data-longitude="<?php echo($event->venue->longitude); ?>" data-lineup="<?php echo('<li>' . implode('</li><li>', $event->lineup) . '</li>'); ?>" data-tickets="<?php echo($tickets); ?>" >
+                                    <div style="position:relative;">
+                                        <h3 class="title-small">
 <?php
         $date = date(TIME_FORMAT, strtotime($event->datetime));
         $location = $event->venue->city . ', ' . (!empty($event->venue->region) && !ctype_digit($event->venue->region) ? $event->venue->region . ', ' : '') . $event->venue->country;
@@ -167,10 +168,11 @@ if (!empty($artist)) {
             echo(' <span class="fa fa-ticket" style="color:#f00;font-size:12px;"></span>');
         }
 ?>
-                                    </h3>
-                                    <a href="#" class="show-event" data-date="<?php echo($date); ?>" data-venue="<?php echo(strtoupper($event->venue->name)); ?>" data-location="<?php echo($location); ?>" data-latitude="<?php echo($event->venue->latitude); ?>" data-longitude="<?php echo($event->venue->longitude); ?>" data-lineup="<?php echo('<li>' . implode('</li><li>', $event->lineup) . '</li>'); ?>" data-tickets="<?php echo($tickets); ?>" ><p><?php echo(strtoupper($event->venue->name)); ?></p></a>
-                                    <p><?php echo($location); ?></p>
-                                </div>
+                                        </h3>
+                                        <p><?php echo(strtoupper($event->venue->name)); ?></p>
+                                        <p><?php echo($location); ?></p>
+                                    </div>
+                                </a>
                             </div>
 <?php
         }

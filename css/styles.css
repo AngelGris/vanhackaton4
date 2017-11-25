@@ -17,6 +17,18 @@
     float: left;
 }
 
+.event a {
+    color: #555566;
+}
+
+.event a:hover {
+    color: #fcc813;
+}
+
+.event h3 {
+    color: inherit;
+}
+
 .modal-body h2 {
     font-size: 16px;
     margin: 0;
