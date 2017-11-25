@@ -229,10 +229,5 @@ if (!empty($artist)) {
         <script src="js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm3KarFLFFjlDCuVDIcixLRhQ-ANyGwAc" async defer></script>
         <script src="js/scripts.js"></script>
-        <script>
-            $(function() {
-
-            });
-        </script>
     </body>
 </html>
