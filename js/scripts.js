@@ -3,6 +3,9 @@ var marker;
 var infowindow;
 var latlng;
 
+/**
+ * Initialize Google Maps
+ */
 function initMap(lat = 0, lng = 0, venue = '') {
     latlng = new google.maps.LatLng(lat, lng);
 
@@ -27,8 +30,14 @@ function initMap(lat = 0, lng = 0, venue = '') {
 }
 
 $(function() {
+    /**
+     * Tooltips for search history artists
+     */
     $('[data-toggle="tooltip"]').tooltip();
 
+    /**
+     * Trigger search when ENTER is pressed
+     */
     $("form.menu-search input").keypress(function (e) {
         if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
             $("form.menu-search").submit();
@@ -38,6 +47,9 @@ $(function() {
         }
     });
 
+    /**
+     * Change information in modal and how it when event is clicked
+     */
     $('.show-event').click(function(e) {
         e.preventDefault();
 
