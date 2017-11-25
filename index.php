@@ -77,7 +77,7 @@ if (!empty($_SESSION['history'])) {
     foreach (array_slice($_SESSION['history'], 0, count($_SESSION['history']) - 1) as $history) {
 ?>
                                 <div class="history">
-                                    <a href="./?q=<?php echo($history->term); ?>"><img src="<?php echo($history->thumb_url); ?>"></a>
+                                    <a href="./?q=<?php echo($history->term); ?>"><img src="<?php echo($history->thumb_url); ?>" data-toggle="tooltip" title="<?php echo($history->name); ?>"></a>
                                 </div>
 <?php
     }
@@ -256,6 +256,8 @@ if (!empty($artist)) {
             }
 
             $(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+
                 $('.show-event').click(function(e) {
                     e.preventDefault();
 
