@@ -68,7 +68,7 @@ if (!empty($artist)) {
                                     <button type="submit" class="default"><i class="icon icon_search"></i></button>
                                 </form>
                             </div>
-                            <div class="col-sm-4 col-md-3">
+                            <div id="previous-searches" class="col-sm-4 col-md-3">
 <?php
 /**
  * If have previous searches, show history
@@ -113,12 +113,17 @@ if (empty($artist)) {
 ?>
                             <img class="imgBand" src="<?php echo($artist->thumb_url); ?>">
                             <h2 class="title-slider large uppercased mb40 word-wrap"><?php echo($artist->name); ?></h2>
+                            <h3>
 <?php
     if (!empty($artist->facebook_page_url)) {
 ?>
-                            <h3><a href="<?php echo($artist->facebook_page_url); ?>" target="_blank"><span class="fa fa-facebook-square"></span></a></h3>
+                                <a href="<?php echo($artist->facebook_page_url); ?>" target="_blank"><span class="fa fa-facebook-square social-network"></span></a>
 <?php
     }
+?>
+                                <a href="#"><span class="fa fa-youtube social-network"></span></a>
+                            </h3>
+<?php
 }
 ?>
                         </div>

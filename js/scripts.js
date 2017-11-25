@@ -33,7 +33,9 @@ $(function() {
     /**
      * Tooltips for search history artists
      */
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+        container: '#previous-searches'
+    });
 
     /**
      * Trigger search when ENTER is pressed
