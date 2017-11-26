@@ -107,7 +107,7 @@ if (!empty($artist)) {
  * If have previous searches, show history
  */
 if (!empty($_SESSION['history'])) {
-    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 6 : count($_SESSION['history']) - 1), true) as $key => $history) {
+    foreach (array_reverse(array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 6 : count($_SESSION['history']) - 1), true), true) as $key => $history) {
 ?>
                                 <div class="history">
                                     <a href="./?id=<?php echo($key); ?>"><img src="<?php echo($history->thumb_url); ?>" data-toggle="tooltip" title="<?php echo($history->name); ?>"></a>

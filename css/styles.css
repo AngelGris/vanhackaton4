@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+#previous-searches {
+    height: 50px;
+    overflow: hidden;
+}
+
 .history {
     float: right !important;
     margin-left: 10px;
