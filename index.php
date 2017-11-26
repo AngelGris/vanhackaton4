@@ -130,7 +130,7 @@ if (empty($artist)) {
 
     if (!empty($videos->items)) {
 ?>
-                                <a href="#" data-toggle="modal" data-target="#modal-videos"><span class="fa fa-youtube social-network"></span></a>
+                                <a href="#" data-toggle="modal" data-target="#modal-videos" data-keyboard="true"><span class="fa fa-youtube social-network"></span></a>
 <?php
     }
 ?>
@@ -229,8 +229,8 @@ if (!empty($videos->items)) {
                     </div>
                     <div class="modal-body">
 
-                        <iframe id="videos-player" src="https://www.youtube.com/embed/<?php echo($videos->items[0]->id->videoId); ?>?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                           
+                        <iframe id="videos-player" src="https://www.youtube.com/embed/<?php echo($videos->items[0]->id->videoId); ?>?enablejsapi=1&rel=01" frameborder="0" allowfullscreen></iframe>
+
                         <div id="videos-wrapper">
                             <div id="videos-left"><span class="fa fa-angle-left"></span></div>
                             <div id="videos-listing" style="width:<?php echo(count($videos->items) * 130); ?>px">

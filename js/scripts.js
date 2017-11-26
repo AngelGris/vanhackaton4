@@ -122,30 +122,35 @@ $(function() {
 
         $('#videos-player').attr('src', 'https://www.youtube.com/embed/' + $(this).attr('href') + '?autoplay=true&enablejsapi=1');
     });
+
+    /**
+     * On videos modal close pause the video player
+     */
+    $('#modal-videos').on('hide.bs.modal', function() {
+        player.pauseVideo();
+    });
 });
 
 
-// this function gets called when API is ready to use
+/**
+ * Use YouTube API to pause video when videos modal is closed
+ */
 function onYouTubePlayerAPIReady() {
-    // create the global player from the specific iframe (#video)
     player = new YT.Player('videos-player', {
-      events: {
-        // call this function when player is ready to use
-        'onReady': onPlayerReady
-      }
+        events: {
+            'onReady': onPlayerReady
+        }
     });
-  }
-  
-  function onPlayerReady(event) {
-    
+}
+
+function onPlayerReady(event) {
     var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function() {
-      player.pauseVideo();
+        pauseButton.addEventListener("click", function() {
+        player.pauseVideo();
     });
-    
-  }
-  
-  var tag = document.createElement('script');
-  tag.src = "//www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
+
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
