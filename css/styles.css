@@ -119,17 +119,24 @@
 }
 
 @media (max-width:767px) {
-    .megamenu {
-        height: 70px;
-        overflow: hidden;
-    }
-
+   
     .header-wrapper {
         position: relative;
     }
 
     .history img {
         width: auto;
+    }
+
+    .history {
+        padding: 5px;
+    }
+
+}
+
+@media (max-width:690px) {   
+    .mt50 {
+        margin-top: 160px !important;
     }
 }
 

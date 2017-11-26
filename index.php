@@ -24,12 +24,12 @@ if (!empty($artist)) {
         }
 
         /**
-         * Limit the number of previous artists to 3
-         * The array will actualy have 4 artists, but since the last element is the current artist
-         * we don't need to show it, so just need to show to first 3 items
+         * Limit the number of previous artists to 6
+         * The array will actualy have 7 artists, but since the last element is the current artist
+         * we don't need to show it, so just need to show to first 6 items
          */
-        if (count($_SESSION['history']) > 3) {
-            $_SESSION['history'] = array_slice($_SESSION['history'], 1, 3);
+        if (count($_SESSION['history']) > 6) {
+            $_SESSION['history'] = array_slice($_SESSION['history'], 1, 6);
         }
     }
 
@@ -69,19 +69,19 @@ if (!empty($artist)) {
                 <header class="header-wrapper">
                     <div class="megamenu">
                         <div class="row">
-                            <div class="col-sm-8 col-md-9">
+                            <div class="col-sm-8 col-md-6">
                                 <form method="GET" class="menu-search">
                                     <input type="text" name="q" placeholder="Search">
                                     <button type="submit" class="default"><i class="icon icon_search"></i></button>
                                 </form>
                             </div>
-                            <div id="previous-searches" class="col-sm-4 col-md-3">
+                            <div id="previous-searches" class="col-sm-4 col-md-6">
 <?php
 /**
  * If have previous searches, show history
  */
 if (!empty($_SESSION['history'])) {
-    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 3 : count($_SESSION['history']) - 1)) as $history) {
+    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 6 : count($_SESSION['history']) - 1)) as $history) {
 ?>
                                 <div class="history">
                                     <a href="./?q=<?php echo($history->term); ?>"><img src="<?php echo($history->thumb_url); ?>" data-toggle="tooltip" title="<?php echo($history->name); ?>"></a>
@@ -223,7 +223,6 @@ if (!empty($videos->items)) {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <!-- <button type="button" id="pause-button">Teste</button> -->
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="pause-button">
                             <span aria-hidden="true" id="closeModalVideo">&times;</span>
                         </button>
