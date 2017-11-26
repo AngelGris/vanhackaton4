@@ -35,7 +35,7 @@ $(function() {
      * Tooltips for search history artists
      */
     $('img[data-toggle="tooltip"]').tooltip({
-        container: '#previous-searches'
+        container: '.megamenu'
     });
 
     /**
