@@ -1,15 +1,39 @@
 <?php
 require_once('includes/config.php');
+session_start();
 
+/**
+ * If there's a search query q, perform teh search
+ */
 if (!empty($_GET['q'])) {
     $artist_url = 'https://rest.bandsintown.com/artists/' . $_GET['q'] . '/';
     $artist = json_decode(file_get_contents($artist_url . '?app_id=' . APP_ID));
+
+    /**
+     * If not artist found, prepare error message
+     */
+    $error_message = 'No results found for "' . strtoupper($_GET['q']) . '"';
 }
 
 /**
- * Handle search history
+ * If no artist found, or no search performed and artist ID provided
  */
-session_start();
+if (empty($artist) and !empty($_GET['id'])) {
+    /**
+     * If artist ID provided is in the cache, load artist from history cache
+     * If not in cacche, prepare error message
+     */
+    if (!empty($_SESSION['history'][$_GET['id']])) {
+        $artist = $_SESSION['history'][$_GET['id']];
+        $artist_url = $artist_url = 'https://rest.bandsintown.com/artists/' . urlencode($artist->name) . '/';
+    } else {
+        $error_message = 'Requested artist is not in your history, please use the search box to find it';
+    }
+}
+
+/**
+ * If artist loaded, apply changes to search history
+ */
 if (!empty($artist)) {
     $artist->term = $_GET['q'];
 
@@ -17,11 +41,7 @@ if (!empty($artist)) {
         /**
          * Remove artist from history if already there
          */
-        foreach ($_SESSION['history'] as $key => $value) {
-            if ($value->id == $artist->id) {
-                unset($_SESSION['history'][$key]);
-            }
-        }
+        unset($_SESSION['history'][$artist->id]);
 
         /**
          * Limit the number of previous artists to 6
@@ -29,21 +49,27 @@ if (!empty($artist)) {
          * we don't need to show it, so just need to show to first 6 items
          */
         if (count($_SESSION['history']) > 6) {
-            $_SESSION['history'] = array_slice($_SESSION['history'], 1, 6);
+            $_SESSION['history'] = array_slice($_SESSION['history'], 1, 6, tue);
         }
     }
 
     /**
      * Add user to the end of the history list
      */
-    $_SESSION['history'][] = $artist;
+    $_SESSION['history'][$artist->id] = $artist;
+} elseif (!empty($_SESSION['history'])) {
+    /**
+     * If not artist loaded and history is not empty, then load last succesful search
+     */
+    $artist = end($_SESSION['history']);
+    $artist_url = 'https://rest.bandsintown.com/artists/' . urlencode($artist->name) . '/';
 }
 
 /**
  * Get artist's videos
  */
 if (!empty($artist)) {
-    $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=id&type=video&maxResults=20&q=' . urlencode($artist->name) . '+vevo&key=' . YOUTUBE_API_KEY));
+    $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=20&q=' . urlencode($artist->name) . '+vevo&key=' . YOUTUBE_API_KEY));
 }
 ?>
 <!DOCTYPE html>
@@ -81,10 +107,10 @@ if (!empty($artist)) {
  * If have previous searches, show history
  */
 if (!empty($_SESSION['history'])) {
-    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 6 : count($_SESSION['history']) - 1)) as $history) {
+    foreach (array_slice($_SESSION['history'], (empty($artist) ? 1 : 0), (empty($artist) ? 6 : count($_SESSION['history']) - 1), true) as $key => $history) {
 ?>
                                 <div class="history">
-                                    <a href="./?q=<?php echo($history->term); ?>"><img src="<?php echo($history->thumb_url); ?>" data-toggle="tooltip" title="<?php echo($history->name); ?>"></a>
+                                    <a href="./?id=<?php echo($key); ?>"><img src="<?php echo($history->thumb_url); ?>" data-toggle="tooltip" title="<?php echo($history->name); ?>"></a>
                                 </div>
 <?php
     }
@@ -93,10 +119,10 @@ if (!empty($_SESSION['history'])) {
                             </div>
                         </div>
 <?php
-if (!empty($_GET['q']) and empty($artist)) {
+if (!empty($error_message)) {
 ?>
                         <div class="alert-danger" style="padding:0 10px;">
-                            No results found for "<?php echo(strtoupper($_GET['q'])); ?>"
+                            <?php echo($error_message); ?>
                         </div>
 <?php
 }
@@ -227,7 +253,7 @@ if (!empty($videos->items)) {
                             <span aria-hidden="true" id="closeModalVideo">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" id="modal-videos-body">
 
                         <iframe id="videos-player" src="https://www.youtube.com/embed/<?php echo($videos->items[0]->id->videoId); ?>?enablejsapi=1&rel=01" frameborder="0" allowfullscreen></iframe>
 
@@ -237,7 +263,7 @@ if (!empty($videos->items)) {
 <?php
     foreach($videos->items as $video) {
 ?>
-                                <div><a href="<?php echo($video->id->videoId); ?>" class="videos-play"><img src="https://img.youtube.com/vi/<?php echo($video->id->videoId); ?>/sddefault.jpg" style="width:120px;"></a></div>
+                                <div><a href="<?php echo($video->id->videoId); ?>" class="videos-play" title="<?php echo($video->snippet->title); ?>" data-toggle="tooltip"><img src="<?php echo($video->snippet->thumbnails->default->url); ?>" style="width:120px;"></a></div>
 <?php
     }
 ?>

@@ -34,8 +34,16 @@ $(function() {
     /**
      * Tooltips for search history artists
      */
-    $('[data-toggle="tooltip"]').tooltip({
+    $('img[data-toggle="tooltip"]').tooltip({
         container: '#previous-searches'
+    });
+
+    /**
+     * Tooltips for video thumbnails
+     */
+    $('.videos-play[data-toggle="tooltip"]').tooltip({
+        container: '#modal-videos-body',
+        offset: '0, 33',
     });
 
     /**

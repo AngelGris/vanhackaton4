@@ -33,6 +33,10 @@
     color: inherit;
 }
 
+.modal-body {
+    overflow: hidden;
+}
+
 .modal-body h2 {
     font-size: 16px;
     letter-spacing: 0;
@@ -61,6 +65,7 @@
 
 .modal-body #videos-wrapper {
     height: 90px;
+    margin-top: 10px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -79,6 +84,11 @@
     position: absolute;
     top: 0;
     z-index: 2;
+}
+
+.modal-body #videos-left span,
+.modal-body #videos-right span {
+    margin-top: 25px;
 }
 
 .modal-body #videos-left {
@@ -119,7 +129,7 @@
 }
 
 @media (max-width:767px) {
-   
+
     .header-wrapper {
         position: relative;
     }
@@ -134,7 +144,7 @@
 
 }
 
-@media (max-width:690px) {   
+@media (max-width:690px) {
     .mt50 {
         margin-top: 160px !important;
     }
