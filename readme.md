@@ -59,4 +59,4 @@ Simply upload the files to your server, change the settings in includes/config.p
 
 ## Online demo
 
-Online demo can be found in our [http://35.163.165.1/vanhackaton/](Amazon Web Services instance)
+Online demo can be found in our [Amazon Web Services instance](http://35.163.165.1/vanhackaton/)
