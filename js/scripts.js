@@ -44,6 +44,7 @@ $(function() {
     $('.videos-play[data-toggle="tooltip"]').tooltip({
         container: '#modal-videos-body',
         offset: '0, 33',
+        trigger : 'hover'
     });
 
     /**
