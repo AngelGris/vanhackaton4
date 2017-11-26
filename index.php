@@ -223,12 +223,15 @@ if (!empty($videos->items)) {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <!-- <button type="button" id="pause-button">Teste</button> -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="pause-button">
+                            <span aria-hidden="true" id="closeModalVideo">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <iframe id="videos-player" src="https://www.youtube.com/embed/<?php echo($videos->items[0]->id->videoId); ?>" frameborder="0" allowfullscreen></iframe>
+
+                        <iframe id="videos-player" src="https://www.youtube.com/embed/<?php echo($videos->items[0]->id->videoId); ?>?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                           
                         <div id="videos-wrapper">
                             <div id="videos-left"><span class="fa fa-angle-left"></span></div>
                             <div id="videos-listing" style="width:<?php echo(count($videos->items) * 130); ?>px">
