@@ -56,3 +56,7 @@ Solution developed in PHP 7, using Bootstrap and jQuery.
 ## Deployment
 
 Simply upload the files to your server, change the settings in includes/config.php file and you are ready to go!
+
+## Online demo
+
+Online demo can be found in our [http://35.163.165.1/vanhackaton/](Amazon Web Services instance)
