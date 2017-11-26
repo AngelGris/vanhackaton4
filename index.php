@@ -12,7 +12,9 @@ if (!empty($_GET['q'])) {
     /**
      * If not artist found, prepare error message
      */
-    $error_message = 'No results found for "' . strtoupper($_GET['q']) . '"';
+    if (empty($artist)) {
+        $error_message = 'No results found for "' . strtoupper($_GET['q']) . '"';
+    }
 }
 
 /**
@@ -59,7 +61,7 @@ if (!empty($artist)) {
     $_SESSION['history'][$artist->id] = $artist;
 } elseif (!empty($_SESSION['history'])) {
     /**
-     * If not artist loaded and history is not empty, then load last succesful search
+     * If not artist loaded and history is not empty, then load last successful search
      */
     $artist = end($_SESSION['history']);
     $artist_url = 'https://rest.bandsintown.com/artists/' . $artist->name . '/';
@@ -69,7 +71,7 @@ if (!empty($artist)) {
  * Get artist's videos
  */
 if (!empty($artist)) {
-    $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=20&q=' . urlencode($artist->name) . '+vevo&key=' . YOUTUBE_API_KEY));
+    $videos = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&maxResults=20&q=' . urlencode($artist->name) . '&key=' . YOUTUBE_API_KEY));
 }
 ?>
 <!DOCTYPE html>
