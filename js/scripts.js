@@ -120,7 +120,7 @@ $(function() {
     $('.videos-play').click(function(e) {
         e.preventDefault();
 
-        $('#videos-player').attr('src', 'https://www.youtube.com/embed/' + $(this).attr('href') + '?autoplay=true&enablejsapi=1');
+        $('#videos-player').attr('src', 'https://www.youtube.com/embed/' + $(this).attr('href') + '?autoplay=true&enablejsapi=1&rel=0');
     });
 
     /**
