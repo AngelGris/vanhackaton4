@@ -25,7 +25,7 @@ if (empty($artist) and !empty($_GET['id'])) {
      */
     if (!empty($_SESSION['history'][$_GET['id']])) {
         $artist = $_SESSION['history'][$_GET['id']];
-        $artist_url = $artist_url = 'https://rest.bandsintown.com/artists/' . urlencode($artist->name) . '/';
+        $artist_url = 'https://rest.bandsintown.com/artists/' . $artist->name . '/';
     } else {
         $error_message = 'Requested artist is not in your history, please use the search box to find it';
     }
@@ -62,7 +62,7 @@ if (!empty($artist)) {
      * If not artist loaded and history is not empty, then load last succesful search
      */
     $artist = end($_SESSION['history']);
-    $artist_url = 'https://rest.bandsintown.com/artists/' . urlencode($artist->name) . '/';
+    $artist_url = 'https://rest.bandsintown.com/artists/' . $artist->name . '/';
 }
 
 /**
